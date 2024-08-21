@@ -1,0 +1,76 @@
+body {
+    background-color: #181818;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #282828;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.info, .tasks {
+    background-color: #383838;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info h2, .tasks h2 {
+    margin-bottom: 10px;
+}
+
+.info input, .tasks ul {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #585858;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #484848;
+    color: #fff;
+}
+
+.tasks ul li {
+    margin-bottom: 5px;
+}
+
+.tasks p {
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .info, .tasks {
+        padding: 10px;
+    }
+
+    .info input, .tasks ul {
+        font-size: 0.9rem;
+    }
+}
