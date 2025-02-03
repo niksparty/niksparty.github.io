@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Young Evance</title>
+    
+    <!-- Подключение Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #222;
+            color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,13 +25,12 @@
             overflow-x: hidden;
         }
         
-        .container {
+        .card {
             max-width: 600px;
             width: 90%;
-            text-align: center;
             padding: 40px;
-            background-color: white;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            background-color: #111;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
             border-radius: 6px;
             opacity: 0;
             transform: translateY(50px);
@@ -36,22 +38,35 @@
         }
         
         h1 {
-            font-size: 36px;
+            font-size: 48px;
             margin-bottom: 24px;
+            color: #20B2AA; /* Цвет текста "Young Evance" */
+            text-shadow: 0 0 10px #00FFC7; /* Тень для текста */
+        }
+        
+        h2.h5 {
+            color: #E0FFFF; /* Цвет заголовков блоков */
+            text-shadow: 0 0 5px #00FFC7; /* Тень для заголовков */
         }
         
         p {
             line-height: 1.6;
             margin-bottom: 18px;
+            color: #fff;
         }
         
         strong {
             font-weight: bold;
+            color: #E0FFFF; /* Цвет жирного текста */
         }
         
         a {
-            color: #007bff;
+            color: #20B2AA;
             text-decoration: none;
+        }
+        
+        ul.list-unstyled li {
+            margin-bottom: 12px;
         }
         
         /* Анимации */
@@ -67,35 +82,53 @@
         }
         
         @media screen and (max-width: 768px) {
-            .container {
+            .card {
                 width: 95%;
             }
             
             h1 {
-                font-size: 28px;
+                font-size: 36px;
             }
         }
     </style>
 </head>
 <body>
-<div class="container">
+<div class="card">
     <h1>Young Evance</h1>
-    <p><strong>Сферы:</strong> Python, JavaScript, HTML, CSS</p>
-    <p><strong>Локация:</strong> Омск, Россия</p>
-    <p><strong>Возраст:</strong> #$&#</p>
-    <p><strong>Участник проекта</strong> Shibu</p>
-    <p><strong>Ссылки</strong></p>
-    <ul>
-        <li><a href="https://youngevance.t.me">Telegram</a></li>
-        <li><a href="https://evanceblood.t.me">Telegram-канал</a></li>
-        <li><a href="https://ShibuDev.t.me">Проект Shibu</a></li>
-    </ul>
-    <p><strong>Мои зеркала</strong></p>
-    <ul>
-        <li><a href="http://youngkrakenbot.t.me/">Kraken Marketplace</a></li>
-        <li><a href="http://fizkylthapkabot.t.me/">В гостях у БоБа</a></li>
-    </ul>
-    <p><strong>Мое устройство:</strong> Redmi 12</p>
+    
+    <!-- Информация обо мне -->
+    <div class="mb-4 bg-dark rounded p-3">
+        <h2 class="h5 mb-3">Информация обо мне</h2>
+        <p><strong>Сферы:</strong> Python, JavaScript, HTML, CSS</p>
+        <p><strong>Локация:</strong> Омск, Россия</p>
+        <p><strong>Возраст:</strong> #$&#</p>
+        <p><strong>Участник проекта</strong> Shibu</p>
+    </div>
+    
+    <!-- Мои устройства -->
+    <div class="mb-4 bg-dark rounded p-3">
+        <h2 class="h5 mb-3">Мое устройство</h2>
+        <p><strong>Redmi 12</strong></p>
+    </div>
+    
+    <!-- Ссылки -->
+    <div class="mb-4 bg-dark rounded p-3">
+        <h2 class="h5 mb-3">Ссылки</h2>
+        <ul class="list-unstyled">
+            <li><a href="https://youngevance.t.me">Telegram</a></li>
+            <li><a href="https://evanceblood.t.me">Telegram-канал</a></li>
+            <li><a href="https://ShibuDev.t.me">Проект Shibu</a></li>
+        </ul>
+    </div>
+    
+    <!-- Мои зеркала -->
+    <div class="bg-dark rounded p-3">
+        <h2 class="h5 mb-3">Мои зеркала</h2>
+        <ul class="list-unstyled">
+            <li><a href="http://youngkrakenbot.t.me/">Kraken Marketplace</a></li>
+            <li><a href="http://fizkylthapkabot.t.me/">В гостях у БоБа</a></li>
+        </ul>
+    </div>
 </div>
 </body>
 </html>
