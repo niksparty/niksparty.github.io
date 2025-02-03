@@ -19,31 +19,51 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            overflow-x: hidden;
         }
         
         .container {
             max-width: 600px;
             width: 90%;
             text-align: center;
-            padding: 20px;
+            padding: 40px;
             background-color: white;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             border-radius: 6px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease forwards;
         }
         
         h1 {
-            font-size: 32px;
-            margin-bottom: 16px;
+            font-size: 36px;
+            margin-bottom: 24px;
         }
         
         p {
             line-height: 1.6;
-            margin-bottom: 12px;
+            margin-bottom: 18px;
+        }
+        
+        strong {
+            font-weight: bold;
         }
         
         a {
             color: #007bff;
             text-decoration: none;
+        }
+        
+        /* Анимации */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
         @media screen and (max-width: 768px) {
@@ -52,7 +72,7 @@
             }
             
             h1 {
-                font-size: 24px;
+                font-size: 28px;
             }
         }
     </style>
@@ -61,22 +81,21 @@
 <div class="container">
     <h1>Young Evance</h1>
     <p><strong>Сферы:</strong> Python, JavaScript, HTML, CSS</p>
-    <p><strong>Локация:</strong> Омск,Россия</p>
+    <p><strong>Локация:</strong> Омск, Россия</p>
     <p><strong>Возраст:</strong> #$&#</p>
     <p><strong>Участник проекта</strong> Shibu</p>
-    <p><a></a></p>
     <p><strong>Ссылки</strong></p>
-    <p><a></a></p>
-    <p><a href="https://youngevance.t.me">Telegram</a></p>
-    <p><a href="https://evanceblood.t.me">Telegram-канал</a></p>
-    <p><a href="https://ShibuDev.t.me">Проект Shibu</a></p>
-    <p><a></a></p>
+    <ul>
+        <li><a href="https://youngevance.t.me">Telegram</a></li>
+        <li><a href="https://evanceblood.t.me">Telegram-канал</a></li>
+        <li><a href="https://ShibuDev.t.me">Проект Shibu</a></li>
+    </ul>
     <p><strong>Мои зеркала</strong></p>
-    <p><a></a></p>
-    <p><a href="http://youngkrakenbot.t.me/">Kraken Marketplace</a></p>
-    <p><a href="http://fizkylthapkabot.t.me/">В гостях у БоБа</a></p>
-    <p><a></a></p>
-    <p><strong>Мои устройства:</strong> Redmi 12</p>
+    <ul>
+        <li><a href="http://youngkrakenbot.t.me/">Kraken Marketplace</a></li>
+        <li><a href="http://fizkylthapkabot.t.me/">В гостях у БоБа</a></li>
+    </ul>
+    <p><strong>Мое устройство:</strong> Redmi 12</p>
 </div>
 </body>
 </html>
